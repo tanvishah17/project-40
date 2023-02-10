@@ -8,19 +8,23 @@
 <script src = "js/player.js"></script>
 <script src = "js/game.js"></script>
    
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
 
 <!--Add database config here below-->
+<script>
 const firebaseConfig = {
   apiKey: "AIzaSyBu6rtKvoWRxtrHOTbUGPksQQYndHOWqzM",
   authDomain: "fruit-catcher-4c3fa.firebaseapp.com",
+  databaseURL: "https://fruit-catcher-4c3fa-default-rtdb.firebaseio.com",
   projectId: "fruit-catcher-4c3fa",
   storageBucket: "fruit-catcher-4c3fa.appspot.com",
   messagingSenderId: "448548373396",
   appId: "1:448548373396:web:852e137848f3a29bf44581"
 };
 
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
+</script>
   
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
